@@ -24,18 +24,9 @@ export default class Character {
       if (this.powerModeHitQuantity === 3) {
         this._powerModeStatus = false;
       }
-      return `
-      Attack level: ${this._attack * 2},
-      Protection level: ${this._protection * 2},
-      Health level: ${this._health * 2}
-      `;
+      return `Attack level: ${this._attack * 2}, Protection level: ${this._protection * 2}, Health level: ${this._health * 2}`;
     }
-    return `
-      I have standard level:
-      attack ${this._attack},
-      protection ${this._protection},
-      health ${this._health}
-      `;
+    return `I have standard level: attack ${this._attack}, protection ${this._protection}, health ${this._health}`;
   }
 
   set powerMode(value) {
